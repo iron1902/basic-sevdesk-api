@@ -17,8 +17,8 @@ trait ResponseTransform
     {
         $decoded = json_decode($body, true, 512, JSON_BIGINT_AS_STRING);
 
-        if(isset($decoded->objects)){
-            return new ResponseAccess($decoded->objects); 
+        if(isset($decoded['objects'])){
+            return new ResponseAccess($decoded['objects']); 
         }
 
         return new ResponseAccess($decoded);
