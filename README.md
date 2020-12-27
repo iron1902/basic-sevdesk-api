@@ -20,7 +20,7 @@ use Iron1902\BasicSevdeskAPI\Options;
 
 // Create options for the API
 $options = new Options();
-$options->setApiKey('YOU_API_KEY_HERE');
+$options->setApiKey('YOUR_API_KEY_HERE');
 
 // Create the client
 $api = new BasicSevdeskAPI($options);
