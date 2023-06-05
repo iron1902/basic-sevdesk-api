@@ -12,7 +12,7 @@ The recommended way to install is [through composer](http://packagist.org).
     
 ## Using the api
 
-For REST calls, the api-key is required.
+For REST calls the api-key is required.
 
 ```php
 use Iron1902\BasicSevdeskAPI\BasicSevdeskAPI;
