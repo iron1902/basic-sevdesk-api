@@ -5,7 +5,6 @@ namespace Iron1902\BasicSevdeskAPI\Contracts;
 use Exception;
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Psr7\Uri;
-use Iron1902\BasicSevdeskAPI\ResponseAccess;
 
 /**
  * Reprecents REST client.

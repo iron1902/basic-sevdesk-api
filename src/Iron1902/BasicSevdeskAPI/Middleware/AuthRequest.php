@@ -3,9 +3,6 @@
 namespace Iron1902\BasicSevdeskAPI\Middleware;
 
 use Exception;
-use Iron1902\BasicSevdeskAPI\BasicSevdeskAPI;
-use Iron1902\BasicSevdeskAPI\Options;
-use Iron1902\BasicSevdeskAPI\Traits\IsRequestType;
 use Psr\Http\Message\RequestInterface;
 
 /**

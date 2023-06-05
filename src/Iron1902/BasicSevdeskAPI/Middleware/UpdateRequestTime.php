@@ -2,7 +2,6 @@
 
 namespace Iron1902\BasicSevdeskAPI\Middleware;
 
-use Iron1902\BasicSevdeskAPI\Traits\IsRequestType;
 use Psr\Http\Message\RequestInterface;
 
 /**
