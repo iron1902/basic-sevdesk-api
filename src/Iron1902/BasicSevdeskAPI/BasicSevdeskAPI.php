@@ -2,8 +2,6 @@
 
 namespace Iron1902\BasicSevdeskAPI;
 
-use Closure;
-use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\HandlerStack;
@@ -12,13 +10,11 @@ use GuzzleRetry\GuzzleRetryMiddleware;
 use Iron1902\BasicSevdeskAPI\Clients\Rest;
 use Iron1902\BasicSevdeskAPI\Contracts\ClientAware;
 use Iron1902\BasicSevdeskAPI\Contracts\RestRequester;
-use Iron1902\BasicSevdeskAPI\Contracts\SessionAware;
 use Iron1902\BasicSevdeskAPI\Contracts\StateStorage;
 use Iron1902\BasicSevdeskAPI\Contracts\TimeDeferrer;
 use Iron1902\BasicSevdeskAPI\Deferrers\Sleep;
 use Iron1902\BasicSevdeskAPI\Middleware\AuthRequest;
 use Iron1902\BasicSevdeskAPI\Middleware\RateLimiting;
-use Iron1902\BasicSevdeskAPI\Middleware\UpdateApiLimits;
 use Iron1902\BasicSevdeskAPI\Middleware\UpdateRequestTime;
 use Iron1902\BasicSevdeskAPI\Store\Memory;
 use Iron1902\BasicSevdeskAPI\Traits\ResponseTransform;

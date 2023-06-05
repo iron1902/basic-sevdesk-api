@@ -2,8 +2,6 @@
 
 namespace Iron1902\BasicSevdeskAPI;
 
-use Exception;
-
 /**
  * Options for the library.
  */
